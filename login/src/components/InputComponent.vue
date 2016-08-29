@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <input type={{ this.props.type }} class="input"/>
+    <input type={{ this.props.sType }} class="input"/>
   </div>
 </template>
 

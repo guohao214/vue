@@ -2,8 +2,8 @@
   <div id="app">
     <img class="logo" src="./assets/logo.png">
     <hello></hello>
-    <input-component type="text"></input-component>
-    <input-component type="password"></input-component>
+    <input-component :s-type="text"></input-component>
+    <input-component :s-type="password"></input-component>
     <p>
       Welcome to your Vue.js app!
     </p>
