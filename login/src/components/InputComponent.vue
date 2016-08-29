@@ -1,6 +1,7 @@
 <template>
+  {{ this.test = "password" }}
   <div class="">
-    <input type={{ this.props.sType }} class="input"/>
+    <input :typeName= {{ test }}  class="input" />
   </div>
 </template>
 
@@ -9,7 +10,8 @@ export default {
   data () {
     return {
     }
-  }
+  },
+  props: ['typeName', 'test']
 }
 </script>
 
