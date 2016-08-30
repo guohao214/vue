@@ -1,7 +1,6 @@
 <template>
-  {{ this.test = "password" }}
   <div class="">
-    <input :typeName= {{ test }}  class="input" />
+    <input v-bind:type= {{ typeName }}  class="input" />{{ typeName }}
   </div>
 </template>
 
@@ -11,7 +10,7 @@ export default {
     return {
     }
   },
-  props: ['typeName', 'test']
+  props: ['typeName']
 }
 </script>
 
