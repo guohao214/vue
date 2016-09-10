@@ -1,6 +1,10 @@
 <template>
   <div class="">
+    <slot>
+      默认提示
+    </slot>
     <input v-bind:type= {{ typeName }}  class="input" />{{ typeName }}
+    <slot name="errorMessage">请输入信息</slot>
   </div>
 </template>
 
