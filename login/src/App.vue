@@ -57,7 +57,7 @@
     <input type="text" v-model="age" debounce="500"> {{ age }}
 
     <h1>条件渲染</h1>
-    <button v-on:click="toggleOk">切换</button>
+    <button v-on:click="toggleOk" v-guohao-dc="ok">切换</button>
     <h4 v-if="ok">Yes</h4>
     <h1 v-else>No</h1>
   </div>
@@ -75,6 +75,18 @@ Vue.use(vueResource)
 // Vue.config.optionMergeStrategies.methods = function (toVal, fromVal) {
 //   toVal = fromVal
 // }
+
+Vue.directive('guohao-dc', {
+  bind: function () {
+    console.log('bind guohao-dc')
+  },
+  update: function (newV, oldV) {
+    console.log(newV, oldV)
+  },
+  unbind: function () {
+    console.log('unbind guohao-dc')
+  }
+})
 
 var mixiClick = {
   methods: {
