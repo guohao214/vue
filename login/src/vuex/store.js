@@ -10,6 +10,10 @@ const state = {
 const mutations = {
   INCREMENT (state, amount) {
     state.count = state.count + amount
+  },
+
+  DECREMENT (state, amount) {
+    state.count = state.count - amount
   }
 }
 
